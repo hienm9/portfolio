@@ -5,6 +5,7 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import Error from './components/Error';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           </Routes>
         </Router>
       </main>
+      <Footer></Footer>
     </div>
   );
 }

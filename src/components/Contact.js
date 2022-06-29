@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -37,26 +39,28 @@ function ContactForm() {
   return (
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
+      <Form id="contact-form" onSubmit={handleSubmit}>
+
+        <Form.Group>
+          <Form.Label htmlFor="name">Name:</Form.Label>
+          <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange} />
+        </Form.Group>
+        <Form.Group>
+          <Form.Label htmlFor="email">Email address:</Form.Label>
+          <Form.Control type="email" name="email" defaultValue={email} onBlur={handleChange} />
+        </Form.Group>
+        <Form.Group>
           <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
+          <Form.Control as="textarea" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+        </Form.Group>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button className="button" type="submit">Submit</button>
-      </form>
+        <Button className="button" type="submit">Submit</Button>
+      </Form>
+
     </section>
   );
 }
