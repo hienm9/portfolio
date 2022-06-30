@@ -12,6 +12,8 @@ function ContactForm() {
     event.preventDefault();
     if (!errorMessage) {
       console.log('Submit Form', formState);
+      setFormState({ name: '', email: '', message: '' });
+      alert ("TEST");
     }
   };
 

@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import About from './components/About';
 import Header from './components/Header';
 import Resume from './components/Resume';
@@ -10,18 +10,10 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>HEADER</h1>
-      </header>
       <main>
         <Router>
           {/* Link and Routes must be within the Router */}
-        <nav>
-          <Link to='/about'>About me</Link>  |
-          <Link to='/project'>Project</Link>  |
-          <Link to='/contact'>Contact</Link>  |
-          <Link to='/resume'>Resume</Link>  
-        </nav>
+          <Header/>
           <Routes>
             <Route path='/' element={<Header />} />
             <Route path='/about' element={<About />} />
@@ -33,7 +25,7 @@ function App() {
           </Routes>
         </Router>
       </main>
-      <Footer></Footer>
+      <Footer/>
     </div>
   );
 }

@@ -1,10 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 function Navigation() {
     return (
         <>
-        <h2>Navigation</h2>
-        <p>This is navigation.</p>
+        <nav>
+          <Link to='/about'>About me</Link>  |
+          <Link to='/project'>Project</Link>  |
+          <Link to='/contact'>Contact</Link>  |
+          <Link to='/resume'>Resume</Link>  
+        </nav>
         </>
     )
 }
