@@ -14,11 +14,28 @@ function Navigation(props) {
             </h4>
           </li>
         </Link>
+        <Link to='/project'>
+          <li className={`mx-5 ${page === 'project' && 'navActive'}`}>
+            <h4>
+              <a href="#project" onClick={() => setPage("project")}>Projects</a>
+            </h4>
+          </li>
+        </Link>
+        <Link to='/contact'>
+          <li className={`mx-5 ${page === 'contact' && 'navActive'}`}>
+            <h4>
+              <a href="#contact" onClick={() => setPage("contact")}>Contact</a>
+            </h4>
+          </li>
+        </Link>
+        <Link to='/resume'>
+          <li className={`mx-5 ${page === 'resume' && 'navActive'}`}>
+            <h4>
+              <a href="#resume" onClick={() => setPage("resume")}>Resume</a>
+            </h4>
+          </li>
+        </Link>
         </ul>
-        {/* <Link to='/about'>About me</Link>  | */}
-        <Link to='/project'>Project</Link>  |
-        <Link to='/contact'>Contact</Link>  |
-        <Link to='/resume'>Resume</Link>
       </nav>
   )
 }
