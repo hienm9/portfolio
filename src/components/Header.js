@@ -1,11 +1,18 @@
 import React from 'react'
 import Navigation from './Navigation';
 
-function Header() {
+function Header(props) {
+    const {page, setPage} = props;
+
     return (
         <>
-        <h2>Hien Mai</h2>
-        <Navigation/>
+            <header className="header">
+                <h1><a href="/about">Hien Mai</a></h1>
+                    <Navigation>
+                        page={page}
+                        setPage={setPage}
+                    </Navigation>
+            </header>
         </>
     )
 }
