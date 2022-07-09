@@ -2,19 +2,18 @@ import React from 'react';
 import avatar from '../assets/images/HienAvatar.png';
 function About() {
   return (
-    <section className="my-5">
-      <h2 id="about">About Me</h2>
-    
-      <div className="my-2">
-      <img src={avatar} className="my-2" style={{ width: "20%" }} alt="Hien avatar" />
+    <section className="about">
+      <h2>About Me</h2>
+      <div className="flex-row">
+      <img src={avatar} style={{ width: "10%" }} alt="Hien avatar" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-          condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-          mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-          Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-          justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-          dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-          Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+        As a problem solver who loves facing challenges and puts quality first, 
+        I'm excited to be at the deployment phase of my career as a web developer. 
+        I am currently earning a full stack web development certificate from 
+        The Ohio State University Coding Bootcamp, where I have developed skills in MERN Stack and SQL servers.
+        <br /><br />
+        I'm passionate about my work, and love to be on a team that questions possibilities 
+        that will make differences to the world.
         </p>
       </div>
     </section>
