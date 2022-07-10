@@ -8,10 +8,10 @@ function Header(props) {
         <>
             <header className="header">
                 <h1><a href="/about">Hien Mai</a></h1>
-                    <Navigation>
+                    <Navigation
                         page={page}
                         setPage={setPage}
-                    </Navigation>
+                    ></Navigation>
             </header>
         </>
     )

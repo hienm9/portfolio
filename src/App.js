@@ -15,10 +15,10 @@ function App() {
  
     <div className="App">
       <Router>
-      <Header>
+      <Header
         page={page}
         setPage={setPage}
-      </Header>
+      ></Header>
       <main>
 
           {/* Link and Routes must be within the Router */}

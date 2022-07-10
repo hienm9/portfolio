@@ -10,28 +10,29 @@ function Navigation(props) {
         <Link to='/about'>
           <li className={`mx-5 ${page === 'about' && 'navActive'}`}>
             <h4>
-              <a href="#about" onClick={() => setPage("about")}>About me</a>
+              {/* <a href="#about" onClick={() => setPage("about")}>About me</a> */}
+              <a href="/about" onClick={() => setPage("about")}>About me</a>
             </h4>
           </li>
         </Link>
         <Link to='/project'>
           <li className={`mx-5 ${page === 'project' && 'navActive'}`}>
             <h4>
-              <a href="#project" onClick={() => setPage("project")}>Projects</a>
+              <a href="/project" onClick={() => setPage("project")}>Projects</a>
             </h4>
           </li>
         </Link>
         <Link to='/contact'>
           <li className={`mx-5 ${page === 'contact' && 'navActive'}`}>
             <h4>
-              <a href="#contact" onClick={() => setPage("contact")}>Contact</a>
+              <a href="/contact" onClick={() => setPage("contact")}>Contact</a>
             </h4>
           </li>
         </Link>
         <Link to='/resume'>
           <li className={`mx-5 ${page === 'resume' && 'navActive'}`}>
             <h4>
-              <a href="#resume" onClick={() => setPage("resume")}>Resume</a>
+              <a href="/resume" onClick={() => setPage("resume")}>Resume</a>
             </h4>
           </li>
         </Link>
