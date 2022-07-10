@@ -1,9 +1,10 @@
 :root {
-  --primary: #23634593;
+  --primary: #0b330593;
   --secondary: #96c40c93;
-  --tertiary: rgb(31, 13, 147); 
+  --tertiary: rgb(33, 33, 34); 
   --light: rgb(215, 230, 240);
   --dark: rgba(9, 76, 72, 0.529);
+  --brown: brown;
 }
 
 body {
@@ -13,11 +14,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: var(--primary); */
- /* background: linear-gradient(90deg, rgb(27, 22, 122) 0%, rgb(117, 117, 227) 35%, rgba(0,212,255,1) 100%); */
- /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
- background-image: url("./assets/images/header.jpg");
-background-size: cover;
+  background-image: url("./assets/images/header.jpg");
+  background-size: cover;
 }
 
 code {
@@ -36,6 +34,7 @@ header {
 
 header h1 a {
   text-decoration: none;
+  color: var(--brown);
 }
 
 header a:hover {
@@ -51,6 +50,20 @@ h1 {
 
 li {
   list-style: none;
+
+}
+
+.navbar > li.mx-5.navActive,
+.navbar > li.mx-5:focus.navActive
+h4
+a {
+  color: var(--brown);
+}
+
+a {
+  text-decoration: none;
+  color: var(--tertiary);
+  position: relative;
 }
 
 .flex-row {
@@ -64,12 +77,10 @@ li {
   margin-left: 1.5rem;
 }
 
+
 /*about section styles*/
 .about img {
   border-radius: 50%;
-  /* width: 200px;
-  height: 200px; */
-  /* align-self: center; */
 }
 
 .about p {
@@ -78,23 +89,29 @@ li {
 }
 
 .about h2 {
-  color: var(--secondary);
+  color: var(--primary);
+  margin-left: 4em; 
 }
 
 section {
   margin: 20px 50px;
 }
 
+.navActive {
+  color: var(--brown);
+}
+
+.navActive a:hover {
+  color: var(--light);
+}
 
 footer {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
-  /* background-color: var(--light) ; */
 }
 
 footer a {
   margin: 20px;
-  /* color: var(--tertiary); */
   color: brown;
 }
