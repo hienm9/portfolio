@@ -39,8 +39,8 @@ function ContactForm() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+    <section className='contact'>
+      <h2>Contact me</h2>
       <Form id="contact-form" onSubmit={handleSubmit}>
 
         <Form.Group>

@@ -65,9 +65,7 @@ function Project() {
                 
                 <Card.Img variant="top" 
                   src={require(`../assets/images/projects/${project.name}.png`)} 
-
                   alt={project.description} 
-                  className="card-img-fluid"
                   />
                 <Card.ImgOverlay className="overlay-card">
                   <Card.Title className="overlay-title">

@@ -6,7 +6,6 @@ function Resume() {
         <section className="resume">
           <h2>Resume</h2>
           <p>Download my 
-            {/* <a href={require('/../assets/HienProfile.pdf')} download> Resume</a> */}
             <a href={require(`../assets/HienProfile.pdf`)} download> Resume</a>
           </p>
           <h4>Front-End Proficiencies</h4>

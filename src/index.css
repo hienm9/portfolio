@@ -107,13 +107,18 @@ section {
 }
 
 .navActive a:hover {
-  color: var(--light);
+  color: var(--brown);
 }
 
 /*projects styles*/
 .projects {
   margin-left: 150px;
   margin-top: 50px;
+}
+
+.projects h2 {
+  color: var(--primary);
+  /* margin-left: 4em;  */
 }
 /* .projects Img {
   height: 300px;
@@ -165,6 +170,17 @@ section {
   color: blue;
   /* padding: 3px 5px; */
 }
+
+/* contact styles */
+.contact {
+  margin-left: 150px;
+  /* margin-top: 50px; */
+}
+
+/* .contact h1{
+  margin-left: 150px;
+  margin-top: 50px;
+} */
 
 footer {
   text-align: center;
