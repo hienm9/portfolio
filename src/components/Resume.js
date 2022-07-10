@@ -1,3 +1,4 @@
+import { toBeRequired } from '@testing-library/jest-dom/dist/matchers';
 import React from 'react'
 
 function Resume() {
@@ -5,7 +6,8 @@ function Resume() {
         <section className="resume">
           <h2>Resume</h2>
           <p>Download my 
-            <a href='/../assets/HienProfile.pdf' download> Resume</a>
+            {/* <a href={require('/../assets/HienProfile.pdf')} download> Resume</a> */}
+            <a href={require(`../assets/HienProfile.pdf`)} download> Resume</a>
           </p>
           <h4>Front-End Proficiencies</h4>
           <ul>
