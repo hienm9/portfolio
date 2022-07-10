@@ -61,7 +61,7 @@ a
   color: var(--brown);
 }
 
-a {
+a .navnotactive {
   text-decoration: none;
   color: var(--dark);
   position: relative;
