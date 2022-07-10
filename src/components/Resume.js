@@ -2,7 +2,7 @@ import React from 'react'
 
 function Resume() {
     return (
-        <section className="resume section">
+        <section className="resume">
           <h2>Resume</h2>
           <p>Download my 
             <a href='/../assets/HienProfile.pdf' download> Resume</a>

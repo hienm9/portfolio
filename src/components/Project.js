@@ -3,6 +3,8 @@ import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Project() {
   const [projects] = useState([
@@ -53,34 +55,33 @@ function Project() {
 
   );
   return (
-    <section className='projects'>
+    <section className='projects '>
       <h2>Projects</h2>
       <Container>
-        <Row xs={1} md={2} className="g-4">
-          {Array.from({ length: 4 }).map((_, idx) => (
-            <Col>
+        <Row xs={2} md={4} className="g-4 flex-row col-lg-2 col-sm-4">
+          {projects.map((project) => (
+            <Col key={project.name}>
               <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                  <Card.Title>Card title</Card.Title>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </Card.Text>
-                </Card.Body>
+                
+                <Card.Img variant="top" 
+                  src={require(`../assets/images/projects/${project.name}.png`)} 
+
+                  alt={project.description} 
+                  className="card-img-fluid"
+                  />
+                <Card.ImgOverlay className="overlay-card">
+                  <Card.Title className="overlay-title">
+                    <a className="overlay-link" href={project.href}>{project.name}</a>
+                    <a className="overlay-github" href={project.github}><FontAwesomeIcon icon={faGithub} /></a>
+                  </Card.Title>
+                  <Card.Text className='overlay-text'>{project.type} - {project.description}</Card.Text>
+                </Card.ImgOverlay>
               </Card>
             </Col>
           ))}
         </Row>
       </Container>
-      <div>
-        {projects.map(project => (
-          <div>
-            <p>{project.description}</p>
-          </div>
-        ))}
-      </div>
+     
     </section>
   )
 }

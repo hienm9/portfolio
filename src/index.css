@@ -61,7 +61,7 @@ a
   color: var(--brown);
 }
 
-a .navnotactive {
+a {
   text-decoration: none;
   color: var(--dark);
   position: relative;
@@ -94,6 +94,10 @@ a .navnotactive {
   margin-left: 4em; 
 }
 
+.resume {
+  margin-left: 150px;
+  margin-top: 50px;
+}
 section {
   margin: 20px 50px;
 }
@@ -105,6 +109,49 @@ section {
 .navActive a:hover {
   color: var(--light);
 }
+
+/*projects styles*/
+/* .projects Img {
+  height: 300px;
+} */
+
+.container {
+  margin: 0 auto; 
+  width: 90%;
+  background-color: white;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 20px;
+}
+
+.overlay-card {
+  position: absolute;
+  color: white;
+  display: block;
+  opacity: 0;
+}
+
+.overlay-title {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  top: 50px;
+  left: 30px;
+  font-size: 1.5rem;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+  font-size: 1.25rem;
+  color: var(--dark);
+}
+
 
 footer {
   text-align: center;
