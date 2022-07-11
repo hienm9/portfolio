@@ -200,7 +200,7 @@ section {
   border-radius: 0.375rem;
 }
 
-.error-page h2 {
+.error-page h2, p {
   margin-left: 150px;
   margin-top: 50px;
 }
