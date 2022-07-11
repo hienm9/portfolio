@@ -25,20 +25,17 @@ code {
 /* header styles */
 header {
   background: var(--light);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 
 header h1 a {
   text-decoration: none;
   color: var(--brown);
-}
-
-header a:hover {
-  color: var(--dark);
 }
 
 h1 {
@@ -47,10 +44,8 @@ h1 {
 }
 
 /*navigation styles */
-
 li {
   list-style: none;
-
 }
 
 .navbar > li.mx-5.navActive,
@@ -78,10 +73,10 @@ a {
   margin-left: 1.5rem;
 }
 
-
 /*about section styles*/
 .about img {
   border-radius: 50%;
+  align-self: center;
 }
 
 .about p {
@@ -96,8 +91,12 @@ a {
 
 .resume {
   margin-left: 150px;
-  margin-top: 50px;
 }
+
+.resume h2 {
+  color: var(--primary);
+}
+
 section {
   margin: 20px 50px;
 }
@@ -106,26 +105,20 @@ section {
   color: var(--brown);
 }
 
-.navActive a:hover {
+.navActive a {
   color: var(--brown);
 }
 
 /*projects styles*/
 .projects {
   margin-left: 150px;
-  margin-top: 50px;
 }
 
 .projects h2 {
   color: var(--primary);
-  /* margin-left: 4em;  */
 }
-/* .projects Img {
-  height: 300px;
-} */
 
 .container {
-  /* margin: 0 auto;  */
   width: 90%;
   background-color: white;
 }
@@ -168,19 +161,21 @@ section {
 /* resume styles */
 .resume a {
   color: blue;
-  /* padding: 3px 5px; */
 }
 
 /* contact styles */
 .contact {
   margin-left: 150px;
-  /* margin-top: 50px; */
 }
 
-/* .contact h1{
+.contact h2 {
+  color: var(--primary);
+}
+
+.error-page h2 {
   margin-left: 150px;
   margin-top: 50px;
-} */
+}
 
 footer {
   text-align: center;

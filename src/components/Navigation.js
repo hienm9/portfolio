@@ -5,13 +5,14 @@ function Navigation(props) {
   const {page, setPage} = props;
 
   return (
+
       <nav className='navbar'>
         <ul className='flex-row'>
         <Link to='/about'>
           <li className={`mx-5 ${page === 'about' && 'navActive'}`}>
             <h4>
               {/* <a href="#about" onClick={() => setPage("about")}>About me</a> */}
-              <a className="navnotactive" href="/about" onClick={() => setPage("about")}>About me</a>
+              <a href="/about" onClick={() => setPage("about")}>About me</a>
             </h4>
           </li>
         </Link>
