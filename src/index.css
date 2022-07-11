@@ -120,11 +120,11 @@ section {
 
 .container {
   width: 90%;
-  background-color: white;
+  background: var(--light);
 }
 
 .card {
-  width: 300px;
+  width: 320px;
   height: 300px;
   position: relative;
   margin: 20px;
@@ -136,26 +136,36 @@ section {
 
 .overlay-card {
   position: absolute;
-  color: rgb(204, 22, 22);
   display: block;
   opacity: 0;
+  transition: .5s ease;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
 }
 
 .overlay-title {
-  position: absolute;
-  display: flex;
-  width: 80%;
-  top: 50px;
-  left: 30px;
-  font-size: 1.5rem;
+  color: var(--brown);
+  padding: 5px;
+}
+
+.overlay-title a{
+  color: var(--brown);
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .overlay-text {
   position: absolute;
-  top: 90px;
-  left: 30px;
-  font-size: 1.25rem;
-  color: var(--dark);
+  font-size: 1rem;
+  color: var(--primary);
+  padding: 5px;
+}
+
+.overlay-github {
+  padding-left: 50px;
 }
 
 /* resume styles */
@@ -222,11 +232,10 @@ section {
 
 footer {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 footer a {
-  margin: 20px;
+  margin: 30px;
   color: brown;
 }

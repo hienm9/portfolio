@@ -58,12 +58,12 @@ function Project() {
     <section className='projects '>
       <h2>Projects</h2>
       <Container>
-        <Row xs={2} md={4} className="g-4 flex-row col-lg-2 col-sm-4">
+        <Row xs={1} md={3} className="flex-row">
           {projects.map((project) => (
             <Col key={project.name}>
               <Card>
                 
-                <Card.Img variant="top" 
+                <Card.Img variant="top" className='card-img'
                   src={require(`../assets/images/projects/${project.name}.png`)} 
                   alt={project.description} 
                   />
