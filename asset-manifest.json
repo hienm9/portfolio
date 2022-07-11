@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hienm9/porfolio/static/css/main.61e2a8b9.css",
+    "main.js": "/hienm9/porfolio/static/js/main.005e44bb.js",
+    "static/js/787.1ed0c42c.chunk.js": "/hienm9/porfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/header.jpg": "/hienm9/porfolio/static/media/header.58c0bcab681e6bc03254.jpg",
+    "static/media/HienAvatar.png": "/hienm9/porfolio/static/media/HienAvatar.2fcf257bb38abe6c8931.png",
+    "static/media/Recipe Search.png": "/hienm9/porfolio/static/media/Recipe Search.4bacdf85484a956befaa.png",
+    "static/media/HienProfile.pdf": "/hienm9/porfolio/static/media/HienProfile.cc5acc0ba7c5e9344704.pdf",
+    "static/media/Coding Compass.png": "/hienm9/porfolio/static/media/Coding Compass.a1e2820c0ee67e38e01b.png",
+    "static/media/Portfolio.png": "/hienm9/porfolio/static/media/Portfolio.240bca185e1c15167b3a.png",
+    "static/media/Weather Dashboard.png": "/hienm9/porfolio/static/media/Weather Dashboard.5ab42fa1c72ebbb8b081.png",
+    "static/media/Budget Tracker.png": "/hienm9/porfolio/static/media/Budget Tracker.d5424cb52e24f887b0d1.png",
+    "static/media/Note Taker.png": "/hienm9/porfolio/static/media/Note Taker.57fdc26878c3c67d3217.png",
+    "index.html": "/hienm9/porfolio/index.html",
+    "main.61e2a8b9.css.map": "/hienm9/porfolio/static/css/main.61e2a8b9.css.map",
+    "main.005e44bb.js.map": "/hienm9/porfolio/static/js/main.005e44bb.js.map",
+    "787.1ed0c42c.chunk.js.map": "/hienm9/porfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61e2a8b9.css",
+    "static/js/main.005e44bb.js"
+  ]
+}
