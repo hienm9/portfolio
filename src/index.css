@@ -1,7 +1,7 @@
 :root {
   --primary: #0f2d73df;
   --secondary: #96c40c93;
-  --tertiary: rgb(33, 33, 34); 
+  --tertiary: rgb(33, 33, 34);
   --light: rgb(215, 230, 240);
   --dark: rgba(9, 76, 72, 0.529);
   --brown: brown;
@@ -22,6 +22,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 /* header styles */
 header {
   background: var(--light);
@@ -39,7 +40,7 @@ header h1 a {
 }
 
 h1 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
 }
 
@@ -48,11 +49,9 @@ li {
   list-style: none;
 }
 
-.navbar > li.mx-5.navActive,
-.navbar > li.mx-5:focus.navActive
-h4,
-a
-{
+.navbar>li.mx-5.navActive,
+.navbar>li.mx-5:focus.navActive h4,
+a {
   color: var(--brown);
 }
 
@@ -86,7 +85,7 @@ a {
 
 .about h2 {
   color: var(--primary);
-  margin-left: 4em; 
+  margin-left: 4em;
 }
 
 .resume {
@@ -151,7 +150,7 @@ section {
   padding: 5px;
 }
 
-.overlay-title a{
+.overlay-title a {
   color: var(--brown);
   font-size: 1rem;
   font-weight: bold;
@@ -238,4 +237,23 @@ footer {
 footer a {
   margin: 30px;
   color: brown;
+}
+
+@media screen and (max-width: 575px) {
+
+  .about img {
+    align-self: flex-start;
+  }
+
+  /*projects styles*/
+  .projects {
+    margin-left: 30px;
+    background-color: white;
+  }
+
+  .container {
+    background: white;
+  }
+
+
 }
