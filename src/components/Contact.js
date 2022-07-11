@@ -13,7 +13,6 @@ function ContactForm() {
     if (!errorMessage) {
       console.log('Submit Form', formState);
       setFormState({ name: '', email: '', message: '' });
-      alert ("TEST");
     }
   };
 
@@ -45,15 +44,15 @@ function ContactForm() {
 
         <Form.Group>
           <Form.Label htmlFor="name">Name:</Form.Label>
-          <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <Form.Control type="text" placeholder="Name" name="name" defaultValue={name} onBlur={handleChange} />
         </Form.Group>
         <Form.Group>
           <Form.Label htmlFor="email">Email address:</Form.Label>
-          <Form.Control type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <Form.Control type="email" placeholder="Email" name="email" defaultValue={email} onBlur={handleChange} />
         </Form.Group>
         <Form.Group>
           <label htmlFor="message">Message:</label>
-          <Form.Control as="textarea" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <Form.Control as="textarea" placeholder="Message" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </Form.Group>
         {errorMessage && (
           <div>
@@ -62,6 +61,10 @@ function ContactForm() {
         )}
         <Button className="button" type="submit">Submit</Button>
       </Form>
+
+      <h4>
+      Or send me an email at:  <a className="my-email" href="mailto:hienm9@gmail.com"> hienm9@gmail.com</a>
+      </h4>
 
     </section>
   );

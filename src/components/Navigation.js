@@ -11,7 +11,6 @@ function Navigation(props) {
         <Link to='/about'>
           <li className={`mx-5 ${page === 'about' && 'navActive'}`}>
             <h4>
-              {/* <a href="#about" onClick={() => setPage("about")}>About me</a> */}
               <a href="/about" onClick={() => setPage("about")}>About me</a>
             </h4>
           </li>
