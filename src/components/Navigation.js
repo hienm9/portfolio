@@ -15,21 +15,21 @@ function Navigation(props) {
             </h4>
           </li>
         </Link>
-        <Link to='/projects'>
+        <Link to='/portfolio/projects'>
           <li className={`mx-5 ${page === 'projects' && 'navActive'}`}>
             <h4>
               <a href="/projects" onClick={() => setPage("projects")}>Projects</a>
             </h4>
           </li>
         </Link>
-        <Link to='/contact'>
+        <Link to='/portfolio/contact'>
           <li className={`mx-5 ${page === 'contact' && 'navActive'}`}>
             <h4>
               <a href="/contact" onClick={() => setPage("contact")}>Contact</a>
             </h4>
           </li>
         </Link>
-        <Link to='/resume'>
+        <Link to='/portfolio/resume'>
           <li className={`mx-5 ${page === 'resume' && 'navActive'}`}>
             <h4>
               <a href="/resume" onClick={() => setPage("resume")}>Resume</a>

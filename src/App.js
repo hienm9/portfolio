@@ -25,10 +25,9 @@ function App() {
           <Routes>
             <Route path='/' element={<About />} />
             <Route path="/portfolio" element={<About />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/projects' element={<Project />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/resume' element={<Resume />} />
+            <Route path='/portfolio/projects' element={<Project />} />
+            <Route path='/portfolio/contact' element={<Contact />} />
+            <Route path='/portfolio/resume' element={<Resume />} />
             <Route path='*' element={<Error />} />  
             {/* always put catch all error last. */}
           </Routes>

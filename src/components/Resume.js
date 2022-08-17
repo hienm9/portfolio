@@ -26,7 +26,7 @@ function Resume() {
             <li>Sequelize</li>
             <li>MongoDB</li>
             <li>Mongoose</li>
-            <li>MERN stack</li>
+            <li>MERN</li>
           </ul>
         </section>
       );

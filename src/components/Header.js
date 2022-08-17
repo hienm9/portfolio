@@ -7,7 +7,7 @@ function Header(props) {
     return (
         <>
             <header className="header">
-                <h1><a href="/about">Hien Mai</a></h1>
+                <h1><a href="/portfolio">Hien Mai</a></h1>
                     <Navigation
                         page={page}
                         setPage={setPage}
