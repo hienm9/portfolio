@@ -3,8 +3,11 @@
   --secondary: #96c40c93;
   --tertiary: rgb(33, 33, 34);
   --light: rgb(215, 230, 240);
+  --light-100: rgb(186, 223, 247);
   --dark: rgba(9, 76, 72, 0.529);
   --brown: brown;
+  --pink: rgb(233, 64, 92);
+  --cyan: rgb(16, 107, 160);
 }
 
 body {
@@ -23,6 +26,41 @@ code {
     monospace;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+  color: var(--tertiary);
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
 /* header styles */
 header {
   background: var(--light);
@@ -36,17 +74,23 @@ header {
 
 header h1 a {
   text-decoration: none;
+  /* color: rgb(56, 68, 238); */
   color: var(--brown);
 }
 
-h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2rem;
+header a:hover {
+  color: var(--cyan);
 }
 
 /*navigation styles */
 li {
   list-style: none;
+}
+
+.navbar li {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
 }
 
 .navbar>li.mx-5.navActive,
@@ -102,11 +146,13 @@ section {
 
 .navActive {
   color: var(--brown);
+  background-color: var(--light-100);
 }
 
 .navActive a {
   color: var(--brown);
 }
+
 
 /*projects styles*/
 .projects {
@@ -169,12 +215,28 @@ section {
 
 /* resume styles */
 .resume a {
-  color: blue;
+  color: var(--primary);
+}
+
+.resume a:hover {
+  color: var(--pink);
 }
 
 /* contact styles */
 .contact {
   margin-left: 150px;
+}
+
+.contact-info {
+  line-height: 2;
+  color: var(--brown);
+}
+
+.contact-info a {
+  color: var(--brown);
+}
+.contact-info a:hover {
+  color: var(--cyan);
 }
 
 .contact h2 {

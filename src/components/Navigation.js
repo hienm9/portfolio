@@ -8,17 +8,17 @@ function Navigation(props) {
 
       <nav className='navbar'>
         <ul className='flex-row'>
-        <Link to='/about'>
+        <Link to='/portfolio'>
           <li className={`mx-5 ${page === 'about' && 'navActive'}`}>
             <h4>
-              <a href="/about" onClick={() => setPage("about")}>About me</a>
+              <a href="#about" onClick={() => setPage("about")}>About me</a>
             </h4>
           </li>
         </Link>
-        <Link to='/project'>
-          <li className={`mx-5 ${page === 'project' && 'navActive'}`}>
+        <Link to='/projects'>
+          <li className={`mx-5 ${page === 'projects' && 'navActive'}`}>
             <h4>
-              <a href="/project" onClick={() => setPage("project")}>Projects</a>
+              <a href="/projects" onClick={() => setPage("projects")}>Projects</a>
             </h4>
           </li>
         </Link>

@@ -40,6 +40,15 @@ function ContactForm() {
   return (
     <section className='contact'>
       <h2>Contact me</h2>
+
+      <h4 className='contact-info'>
+      Email:  <a className="my-email" href="mailto:hienm9@gmail.com"> hienm9@gmail.com</a><br />
+      <a href="https://www.linkedin.com/in/hien-mai-a765a3126/">LinkedIn</a><br />
+      <a href="https://github.com/hienm9">GitHub</a>
+      </h4>
+
+      <h5>OR use the form below</h5>
+
       <Form id="contact-form" onSubmit={handleSubmit}>
 
         <Form.Group>
@@ -61,10 +70,6 @@ function ContactForm() {
         )}
         <Button className="button" type="submit">Submit</Button>
       </Form>
-
-      <h4>
-      Or send me an email at:  <a className="my-email" href="mailto:hienm9@gmail.com"> hienm9@gmail.com</a>
-      </h4>
 
     </section>
   );

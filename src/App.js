@@ -24,8 +24,9 @@ function App() {
           {/* Link and Routes must be within the Router */}
           <Routes>
             <Route path='/' element={<About />} />
+            <Route path="/portfolio" element={<About />} />
             <Route path='/about' element={<About />} />
-            <Route path='/project' element={<Project />} />
+            <Route path='/projects' element={<Project />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/resume' element={<Resume />} />
             <Route path='*' element={<Error />} />  
