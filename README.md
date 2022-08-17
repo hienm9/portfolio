@@ -3,7 +3,7 @@
 ## Description
 This is my portfolio built with React single-page application.
 
-### Application site : https://hienm9.github.io/porfolio/
+### Application site : https://hienm9.github.io/portfolio/
 
 ## Usage
 - This website has about me, projects, contact and resume sections.
